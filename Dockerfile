@@ -11,7 +11,6 @@ RUN apt-get -y update && \
     rm -rf /var/lib/apt/lists/* && \
     pip install --no-cache-dir -r requirements.txt
 
-COPY notebooks/ /${PROJECT_DIR}/notebooks/
 COPY app.py /${PROJECT_DIR}/app.py
 COPY db.py /${PROJECT_DIR}/db.py
 COPY configurations.py /${PROJECT_DIR}/configurations.py
